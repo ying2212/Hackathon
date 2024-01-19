@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Statistics</title>
+    <link href="infopage.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load Charts and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Draw the pie chart for Early Childhood when Charts is loaded.
+      google.charts.setOnLoadCallback(drawEarlyChart);
+
+      // Draw the pie chart for the Middle Childhood when Charts is loaded.
+      google.charts.setOnLoadCallback(drawMiddleChart);
+
+      // Callback that draws the pie chart for  Early Childhood.
+      function drawEarlyChart() {
+
+        // Create the data table for Early Childhood.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Equitable', 2.3],
+          ['Male Bias', 1],
+          ['Female Bias', 0.6]
+        ]);
+
+        // Set options for Early Childhood pie chart.
+        var options = {title:'Early Childhood',
+                       width:400,
+                       height:300};
+
+        // Instantiate and draw the chart for Early Childhood.
+        var chart = new google.visualization.PieChart(document.getElementById('Early_chart_div'));
+        chart.draw(data, options);
+      }
+
+      // Callback that draws the pie chart for Middle Childhood.
+      function drawMiddleChart() {
+
+        // Create the data table for Middle Childhood.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Equitable', 3],
+          ['Male Bias', 0.55],
+          ['Female Bias', 0.5],
+        ]);
+
+        // Set options for Middle Childhood pie chart.
+        var options = {title:'Middle Childhood',
+                       width:400,
+                       height:300};
+
+        // Instantiate and draw the chart for Middle Childhood.
+        var chart = new google.visualization.PieChart(document.getElementById('Middle_chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Gender Stereotypes Awareness in Early Age: </h1>
+    <!--Table and divs that hold the pie charts-->
+    <table class="columns">
+      <tr>
+        <td><div id="Early_chart_div" style="margin-left: 310px"></div></td>
+        <td><div id="Middle_chart_div" ></div></td>
+      </tr>
+    </table>
+  <div><a href="https://www.sciencedirect.com/science/article/pii/S0193397319300930">Read full article here</a>
+  </div>
+    <br>
+    
+  <h2>"The gender stereotypes introduced in childhood are reinforced throughout our lives and become self-fulfilling prophesies. Most leadership positions are held by men, so women don't expect to achieve them, and that becomes one of the reasons they don’t."  <a href="https://en.wikipedia.org/wiki/Sheryl_Sandberg"> ---Sheryl Sandberg</a></h2>
+  <img src="children.png" style="margin-left:450px">
+  <h3>Direct Gender Messages to Children During Early Childhood </h3>
+    <p>Children’s memberships in social groups have profound effects on their motivation. Stereotypes about social groups shape children’s beliefs about what is expected for their group members. These beliefs can influence children’s developing beliefs about themselves (self-perceptions).When children belong to a gender group that is negatively stereotyped in STEM field, they may doubt their own capabilities and whether they should pursue a future in the field, making it harder for them to develop interest over time. Developmentally, the influence of gender stereotypes on motivation begins during preschool and strengthens during late childhood.</p>
+  <h4>Parents’ Beliefs and Actions in Relation to Children’s Socialization to Gender Roles</h4>
+    <p>Gender stereotypes about females’ ability in STEM can limit women’s future engagement in STEM careers. Specifically, studies show that women are underrepresented in areas where success is build on the requirement of high critical thinking abilities, as these abilities are believed to be associated with men more than women. </p>
+    <p> Gender stereotypes also have the potential to impact other factors such as self-efficacy, identity, belonging, engagement, and persistence in technological field.  One could argue that gendered parenting teaches children about the reality of gender role expectations in their social environment, preparing them for later life. On the other hand, if children are raised on the basis of gender rather than their abilities, talent may be wasted and and may be forced into lifestyles and careers that deny personal identities. Which also affects well-being. These factors are likely to play out differently in different cultures.</p><div class="blue-rectangle">
+      <h5>Click me to answer questions!</h5>
+      <a href="quiz.html"><img src="cat.gif" alt="quiz" style="width:100px;height:100px;margin-right:200%"></a>
+  </body>
+</html>
+
