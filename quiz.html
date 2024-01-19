@@ -1,0 +1,52 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+ <link href="infopage.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>Gender Bias Quiz</h1>
+<form id="form1">
+
+<h2>Which is the example of gender stereotypes?</h2>
+<label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Saying a girl likes pink and a boy likes blue</label>
+<label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />Boys are good at math</label>
+<label for="var_info"><input type="radio" name="variable" value="25" id="var_info" />All of above</label>
+
+<h2>What does the word "stereotype" mean?</h2>
+<label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/>A popular belief about a group of people baes on assumptions</label>
+<label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>An image or character that represent a person online</label>
+<label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />the internet</label>
+
+<h2>Which of the following terms refers to individuals' beliefs and actions that are rooted in anti-female prejudice and stereotypic beliefs?</h2>
+<label for="cat_string"><input type="radio" name="con" value="25" id="cat_string" />individual sexism</label>
+<label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" />gender segregation</label>
+<label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />gender socialization</label>
+
+<h2>Gender roles refer to: </h2>
+<label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />the subordination of women based on the assumption of superiority of men.</label>
+<label for="if_join"><input type="radio" name="ifstate" value="25" id="if_join" />the rights, responsibilities, expectations, and relationships of women and men.</label>
+<label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />None of the above.</label>
+<button type="submit" value="Submit">Submit</button>
+  </form>
+  <p>Your grade is: <span id="grade">__</span></p>
+<p id="grade2"></p>
+</div>
+  
+<script>
+  document.getElementById("form1").onsubmit=function() {
+    variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+    sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+    con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+    ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+    
+    result = variable + sub + con + ifstate;
+	document.getElementById("grade").innerHTML = result;
+
+return false; }
+</script>
+</body>
+
+</body>
+</html>
