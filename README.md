@@ -5,7 +5,7 @@ This website was made to inform others about stereotypes!
 <p>
 Every day, we use language. This language contains information that we believe to be true and expressly want to convey to the person with whom we are communicating. Furthermore, the words we use contain a significant amount of implicit information about us, our thinking, and many other aspects, all of which can be viewed as information embedded in the language Regularities are frequently sought when analyzing natural language. Gender stereotypes are one of the regularities that we are looking for. Our motivation for writing this website primarily from the fact that everyday language has a significant impact on society and on us as individuals. Regularities, such as stereotypes, are usually the result of a number of factors, such as origin, culture, social environment, or education.   </p>
 
- <a href= "https://c342f843-2d3a-468a-9ead-29e01e60c020-00-3k4wgtml89skx.kirk.replit.dev/" > Click here to view our page </a>
+ <a href= "[https://c342f843-2d3a-468a-9ead-29e01e60c020-00-3k4wgtml89skx.kirk.replit.dev/] > Click here to view our page </a>
  <p> In this project, we use html, css, and javascript to make a interactive website that makes learning intersting. </p>
  <h3>This website Contains: </h3> 
  •Info Page<br>
